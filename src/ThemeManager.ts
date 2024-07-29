@@ -3,7 +3,7 @@ interface Theme {
   color: string;
 }
 
-class ThemeManager {
+export default class ThemeManager {
   private static instance: ThemeManager;
   private theme: Theme = {
     backgroundColor: "white",
@@ -33,5 +33,3 @@ class ThemeManager {
     return this.theme;
   }
 }
-
-export default ThemeManager;
